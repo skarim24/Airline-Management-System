@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="vbox" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.SignupController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: rgba(0, 100, 100, 0.2);">
+               <children>
+                  <JFXTextField fx:id="firstnameField" labelFloat="true" layoutX="106.0" layoutY="102.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="First Name" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="lastnameField" labelFloat="true" layoutX="332.0" layoutY="102.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="Last Name" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="addressField" labelFloat="true" layoutX="106.0" layoutY="161.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="Address" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="userField" labelFloat="true" layoutX="106.0" layoutY="222.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="Username" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="passField" labelFloat="true" layoutX="332.0" layoutY="222.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="Password" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="zipcodeField" labelFloat="true" layoutX="332.0" layoutY="161.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="Zip Code" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="stateField" labelFloat="true" layoutX="332.0" layoutY="43.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="State" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailField" labelFloat="true" layoutX="219.0" layoutY="292.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="Email" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="ssnField" labelFloat="true" layoutX="106.0" layoutY="43.0" maxWidth="162.0" minWidth="162.0" prefHeight="39.0" prefWidth="162.0" promptText="SSN" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="doneBtn" buttonType="RAISED" layoutX="172.0" layoutY="387.0" onAction="#signupMethod" prefHeight="47.0" prefWidth="88.0" style="-fx-background-color: #000000;" text="Done" textFill="#fffbfb" />
+                  <JFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="341.0" layoutY="387.0" onAction="#cancelMethod" prefHeight="47.0" prefWidth="88.0" style="-fx-background-color: #000000;" text="Cancel" textFill="#fffbfb" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

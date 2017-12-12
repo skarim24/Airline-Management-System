@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rootPane" alignment="CENTER" prefHeight="600.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addFlight.AddFlightController">
+   <children>
+      <HBox alignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Pane fx:id="flightPane" prefHeight="541.0" prefWidth="597.0" style="-fx-background-color: rgba(0, 100, 100, 0.2);">
+               <children>
+                  <JFXComboBox fx:id="fJetIdCombo" layoutX="225.0" layoutY="50.0" prefHeight="25.0" prefWidth="172.0" promptText="Jet ID for Flight" />
+                  <JFXTextField fx:id="fSourceField" focusColor="BLACK" labelFloat="true" layoutX="76.0" layoutY="111.0" promptText="Source" />
+                  <JFXTextField fx:id="fDestinationField" focusColor="BLACK" labelFloat="true" layoutX="397.0" layoutY="111.0" promptText="Destination" />
+                  <JFXDatePicker fx:id="fDatePicker" defaultColor="#0a0a0a" layoutX="397.0" layoutY="180.0" prefHeight="25.0" prefWidth="185.0" promptText="Flight Date" />
+                  <JFXButton fx:id="fDoneBtn" buttonType="RAISED" layoutX="268.0" layoutY="246.0" onAction="#addFlightToDatabase" prefHeight="41.0" prefWidth="84.0" style="-fx-background-color: #000000;" text="Doneeeee" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="10.0" prefHeight="25.0" prefWidth="185.0" text="FLIGHT">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="fTimePicker" defaultColor="#0a0a0a" layoutX="76.0" layoutY="180.0" prefHeight="25.0" prefWidth="185.0" promptText="Flight Time" showTime="true" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Pane fx:id="jetPane" prefHeight="541.0" prefWidth="597.0" style="-fx-background-color: rgba(0, 100, 100, 0.2);">
+               <children>
+                  <JFXTextField fx:id="jetNameField" focusColor="BLACK" labelFloat="true" layoutX="76.0" layoutY="109.0" promptText="Jet Name" />
+                  <JFXTextField fx:id="jetCapacityField" focusColor="BLACK" labelFloat="true" layoutX="398.0" layoutY="109.0" promptText="Jet Capacity" />
+                  <JFXButton fx:id="jetDoneBtn" buttonType="RAISED" layoutX="268.0" layoutY="195.0" onAction="#addJetToDatabase" prefHeight="41.0" prefWidth="84.0" style="-fx-background-color: #000000;" text="Done" textFill="WHITE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="14.0" prefHeight="25.0" prefWidth="172.0" text="JET">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="jetIdField" focusColor="BLACK" labelFloat="true" layoutX="236.0" layoutY="56.0" promptText="Jet ID " />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

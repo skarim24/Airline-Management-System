@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootPane" prefHeight="545.0" prefWidth="760.0" style="-fx-background-color: rgba(0,100,100,0.2);" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainapp.MainAppController">
+   <children>
+      <JFXButton fx:id="cFlightBtn" buttonType="RAISED" layoutX="293.0" layoutY="-298.0" onAction="#myFlightsCustomer" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="My Flightssssss" textFill="WHITE" visible="false" AnchorPane.bottomAnchor="786.0" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="-298.0">
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </JFXButton>
+      <BorderPane fx:id="borderpane" prefHeight="545.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox fx:id="btnVbox" prefHeight="545.0" prefWidth="176.0" style="-fx-background-color: rgba(0,0,0,0.2);" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../images/loginImage.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="addBtn" buttonType="RAISED" onAction="#addFlight" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Add Flight" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="15.0" layoutY="30.0" onAction="#deleteFlight" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Delete Flight" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="searchBtn" buttonType="RAISED" layoutX="15.0" layoutY="98.0" onAction="#searchFlight" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Search Flight" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="displayFlightBtn" buttonType="RAISED" layoutX="15.0" layoutY="166.0" onAction="#displayFlight" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Display Flights" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="changepassBtn" buttonType="RAISED" layoutX="15.0" layoutY="234.0" onAction="#changePassword" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Change Password" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                   <JFXButton fx:id="AddflightBtn" buttonType="RAISED" layoutX="15.0" layoutY="300" onAction="#changePassword" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Add Flight" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="logoutBtn" buttonType="RAISED" layoutX="15.0" layoutY="368.0" onAction="#logOut" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: #000000;" text="Log Out" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
